@@ -336,12 +336,27 @@ document.querySelectorAll(
    MOBILE MENU
 ========================== */
 
-const menuBtn =
-document.querySelector(".mobile-menu-btn");
+const menuButton =
+    document.querySelector(
+        ".mobile-menu-btn"
+    );
 
 const navMenu =
-document.querySelector(".nav-menu");
+    document.querySelector(
+        ".nav-menu"
+    );
 
-menuBtn.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-});
+if (menuButton) {
+
+    menuButton.addEventListener(
+        "click",
+        () => {
+
+            navMenu.classList.toggle(
+                "active"
+            );
+
+        }
+    );
+
+}
