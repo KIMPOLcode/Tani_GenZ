@@ -396,8 +396,8 @@ body{
 
 .video-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+    gap:30px;
     margin-top:40px;
 }
 
@@ -406,7 +406,7 @@ body{
     border-radius:20px;
     overflow:hidden;
     box-shadow:0 10px 25px rgba(0,0,0,.12);
-    transition:.3s ease;
+    transition:all .3s ease;
 }
 
 .video-card:hover{
@@ -421,18 +421,26 @@ body{
 }
 
 .video-info{
-    padding:15px 20px;
+    padding:20px;
 }
 
 .video-info h3{
-    color:var(--dark);
-    margin-bottom:8px;
+    color:var(--primary);
+    margin-bottom:10px;
     font-size:1.1rem;
 }
 
 .video-info p{
     color:#666;
-    font-size:.9rem;
+    line-height:1.6;
+}
+
+@media(max-width:768px){
+
+    .video-grid{
+        grid-template-columns:1fr;
+    }
+
 }
 
 /* ===========================
